@@ -30,13 +30,13 @@ A 2° comparação é igual a primeira porém agora utilizando o valor armazenad
 ```
 A 3° comparação utiliza outros operador de comparação, porém esses operadores funcionam apenas em valores do tipo `bool`(que só podem ser verdadeiro-`true` ou falso-`false`). Os operadores são os seguintes
 
-| operador | $\&\&$ | $\|\|$ | $!$ |
+| operador | `&&` | `\|\|` | `!` |
 |:-:|:-:|:-:|:-:|
 | equivalente ao português | "e" | "ou" | "não" |
 
-- $\&\&$ é o nosso "e" do português
-- $||$ é o nosso "ou" do português
-- $!$ é o nosso não do português
+- `&&` é o nosso "e" do português
+- `||` é o nosso "ou" do português
+- `!` é o nosso não do português
   - Exemplo: vamos supor que queremos executar algum código quando a pessoa não é autorizada a entrar no sistema, podemos usar uma variável chamada `tem_autorizacao`, ai faremos a leitura do código da seguinte forma, "se a pessoa não tem autorização, avise-a.", que pode ser transcrito da seguinte forma:
     ```c++
     if(!tem_autorizacao)// podemos ler essa linha como:
@@ -49,7 +49,7 @@ na prática, o que o "`!`" faz é inverter o valor da variável do tipo `bool`, 
 - `!false` transforma o `false` em `true`
 - `!true` transforma o `true` em `false`
 
-Obs.: o código encontrado não estava 100\% correto, pois era necessário adicionar duas chamadas para a função `pinMode(Sensor1,INPUT);` e `pinMode(Sensor1,INPUT);` para podermos ler os valores medidos pelos sensores infravemelho.
+Obs.: o código encontrado não estava 100\% correto, pois era necessário adicionar duas chamadas para a função `pinMode(Sensor1,INPUT);` e `pinMode(Sensor2,INPUT);` para podermos ler os valores medidos pelos sensores infravemelho.
 
 
 ## próxima reunião
