@@ -1,4 +1,5 @@
 
+
 //pinMode(porta/pino, INPUT ou OUTPUT);
 void setup()
 {
